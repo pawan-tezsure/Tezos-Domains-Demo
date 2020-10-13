@@ -15,7 +15,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "node app.js"
+    "transfer": "node app.js"
   },
   "author": "Pawan Dhanwani",
   "license": "ISC"
