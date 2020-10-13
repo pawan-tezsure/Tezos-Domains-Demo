@@ -1,0 +1,22 @@
+{
+  "name": "tezos-domain-client-test",
+  "version": "1.0.0",
+  "description": "A simple CLI app to utilize tezos domains for transfers.",
+  "main": "app.js",
+  "dependencies": {
+    "@taquito/taquito": "^6.3.5-beta.0",
+    "@tezos-domains/client": "^1.0.0-beta.13",
+    "@tezos-domains/core": "^1.0.0-beta.13",
+    "conseiljs": "^5.0.4",
+    "conseiljs-softsigner": "^5.0.3",
+    "loglevel": "^1.7.0",
+    "node-fetch": "^2.6.1",
+    "readline": "^1.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node app.js"
+  },
+  "author": "Pawan Dhanwani",
+  "license": "ISC"
+}
