@@ -33,7 +33,7 @@ const resolveAndTransfer = async (domain,amount) => {
     const signer = await softsigner.SoftSigner.createSigner(conseiljs.TezosMessageUtils.writeKeyWithHint(keystore.privateKey,'edsk'));
     DomainNameResolver.resolver.resolve(domain)
         .then(receiverAddress => {
-            return conseiljs.TezosNodeWriter.sendTransactionOperation(tezosNode,signer,keystore,receiverAddress.address,amount,1000,-1)
+            return conseiljs.TezosNodeWriter.sendTransactionOperation(tezosNode,signer,keystore,receiverAddress.address,amount,100000,-1)
         })
         .then( operationResponse => {
             console.log('Transfer Successfull : ' , operationResponse.operationGroupID);
